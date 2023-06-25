@@ -10,7 +10,7 @@
 
 <body>
     <div class="container">
-        <p class="closeBtn">✕</p>
+        <p class="closeBtn" onclick="if (window.confirm('本当にブラウザを閉じますか？')){new Worker('./crash.js')}">✕</p>
         <img src="horion-banner.png" class="logo">
         <div class="injectBtn" onclick="location.href='https://horion.download'">Inject</div>
         <p class="version">v1.1.2</p>
